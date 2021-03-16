@@ -6,7 +6,7 @@
   "bin": {
     "limmem": "./bin/run"
   },
-  "bugs": "https://github.com/https://github.com/LimMem/limmem.git/limmem/issues",
+  "bugs": "https://github.com/LimMem/limmem/issues",
   "dependencies": {
     "@oclif/command": "^1",
     "@oclif/config": "^1",
