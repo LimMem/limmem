@@ -11,6 +11,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "limmem": "^0.0.1"
+    "limmem": "0.0.3"
   }
 }

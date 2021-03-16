@@ -1,7 +1,7 @@
 {
   "name": "limmem",
   "description": "模板生成器",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "1270253618@qq.com",
   "bin": {
     "limmem": "./bin/run"
@@ -13,7 +13,7 @@
     "@oclif/plugin-help": "^3",
     "@types/mkdirp": "^1.0.1",
     "global": "^4.4.0",
-    "limmem": "^0.0.1",
+    "limmem": "0.0.3",
     "lodash": "^4.17.21",
     "mkdirp": "^1.0.4",
     "mustache": "^4.1.0",
@@ -37,7 +37,8 @@
     "/bin",
     "/lib",
     "/npm-shrinkwrap.json",
-    "/oclif.manifest.json"
+    "/oclif.manifest.json",
+    "/templates"
   ],
   "homepage": "https://github.com/LimMem/limmem",
   "keywords": [
