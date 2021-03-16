@@ -1,7 +1,7 @@
 {
   "name": "limmem",
   "description": "模板生成器",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "author": "1270253618@qq.com",
   "bin": {
     "limmem": "./bin/run"
@@ -33,13 +33,6 @@
   "engines": {
     "node": ">=8.0.0"
   },
-  "files": [
-    "/bin",
-    "/lib",
-    "/npm-shrinkwrap.json",
-    "/oclif.manifest.json",
-    "/templates"
-  ],
   "homepage": "https://github.com/LimMem/limmem",
   "keywords": [
     "oclif"
@@ -62,5 +55,8 @@
     "version": "oclif-dev readme && git add README.md",
     "pub": "npm publish"
   },
-  "types": "lib/index.d.ts"
+  "types": "lib/index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  }
 }

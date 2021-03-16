@@ -368,6 +368,22 @@ limmem@0.0.3:
     mustache "^4.1.0"
     tslib "^1"
 
+limmem@0.0.5:
+  version "0.0.5"
+  resolved "https://registry.npmjs.org/limmem/-/limmem-0.0.5.tgz#599972d7fde24c04fc511b79c8200a987ea8010a"
+  integrity sha512-nqacweMj2gS5ApjQBEHgx5/88kR6Rum7XWLXx1PRVGIhZjgSPXlDsLWDxeDnNDGxpEhCXVmeA6e4nZ8+X0B9rw==
+  dependencies:
+    "@oclif/command" "^1"
+    "@oclif/config" "^1"
+    "@oclif/plugin-help" "^3"
+    "@types/mkdirp" "^1.0.1"
+    global "^4.4.0"
+    limmem "0.0.3"
+    lodash "^4.17.21"
+    mkdirp "^1.0.4"
+    mustache "^4.1.0"
+    tslib "^1"
+
 limmem@^0.0.1:
   version "0.0.1"
   resolved "https://registry.npmjs.org/limmem/-/limmem-0.0.1.tgz#c0ff5b67d7399a2fab4f6662cced8af02640aca0"
