@@ -36,7 +36,7 @@ class Generator {
       prefixCls,
     };
 
-    const prefixFilePath = './template/index';
+    const prefixFilePath = '../template/index';
     chartsFiles.forEach((item: { template: string; targetPath: string; }) => {
       copyTpl({
         templatePath: join(__dirname, prefixFilePath, item.template),
@@ -89,7 +89,7 @@ class Generator {
       prefixCls,
     };
 
-    const prefixFilePath = './template/sub';
+    const prefixFilePath = '../template/sub';
     chartsSubFiles.forEach((item: { template: string; targetPath: string; }) => {
       copyTpl({
         templatePath: join(__dirname, prefixFilePath, item.template),
