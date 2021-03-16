@@ -1,6 +1,6 @@
 import { existsSync } from 'fs';
 import { join, basename } from 'path';
-import { chartsSubFiles, chartsFiles } from './data/index';
+import { chartsSubFiles, chartsFiles } from './data';
 import { appendFileToText, copyTpl } from './utils';
 const assert = require('assert');
 const lodash = require('lodash');

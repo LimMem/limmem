@@ -1,25 +1,21 @@
-cli-alita
+# limmem
 =========
 
 模板生成器
 
-[![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
-[![Version](https://img.shields.io/npm/v/cli-alita.svg)](https://npmjs.org/package/cli-alita)
-[![Downloads/week](https://img.shields.io/npm/dw/cli-alita.svg)](https://npmjs.org/package/cli-alita)
-[![License](https://img.shields.io/npm/l/cli-alita.svg)](https://github.com/https://github.com/LimMem/limmem.git/limmem/blob/master/package.json)
-
 <!-- toc -->
+* [limmem](#limmem)
 * [Usage](#usage)
 * [Commands](#commands)
 <!-- tocstop -->
 # Usage
 <!-- usage -->
 ```sh-session
-$ npm install -g cli-alita
+$ npm install -g limmem
 $ limmem COMMAND
 running command...
 $ limmem (-v|--version|version)
-cli-alita/0.0.1 darwin-x64 node-v12.18.3
+limmem/0.0.1 darwin-x64 node-v12.18.3
 $ limmem --help [COMMAND]
 USAGE
   $ limmem COMMAND
@@ -28,16 +24,21 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`limmem hello [FILE]`](#limmem-hello-file)
+* [`limmem charts [NAME] [SUBNAME]`](#limmem-charts-name-subname)
 * [`limmem help [COMMAND]`](#limmem-help-command)
+* [`limmem plus [NAME] [SUBNAME]`](#limmem-plus-name-subname)
 
-## `limmem hello [FILE]`
+## `limmem charts [NAME] [SUBNAME]`
 
 describe the command here
 
 ```
 USAGE
-  $ limmem hello [FILE]
+  $ limmem charts [NAME] [SUBNAME]
+
+ARGUMENTS
+  NAME     组件名称
+  SUBNAME  子组件名称
 
 OPTIONS
   -f, --force
@@ -45,11 +46,9 @@ OPTIONS
   -n, --name=name  name to print
 
 EXAMPLE
-  $ limmem hello
-  hello world from ./src/hello.ts!
 ```
 
-_See code: [src/commands/hello.ts](https://github.com/LimMem/limmem.git/limmem/blob/v0.0.1/src/commands/hello.ts)_
+_See code: [src/commands/charts.ts](https://github.com/LimMem/limmem.git/limmem/blob/v0.0.1/src/commands/charts.ts)_
 
 ## `limmem help [COMMAND]`
 
@@ -67,4 +66,27 @@ OPTIONS
 ```
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v3.2.2/src/commands/help.ts)_
+
+## `limmem plus [NAME] [SUBNAME]`
+
+describe the command here
+
+```
+USAGE
+  $ limmem plus [NAME] [SUBNAME]
+
+ARGUMENTS
+  NAME     组件名称
+  SUBNAME  子组件名称
+
+OPTIONS
+  -f, --force
+  -h, --help       show CLI help
+  -n, --name=name  name to print
+
+EXAMPLE
+  $ limmem plus [NAME] [SUBNAME]
+```
+
+_See code: [src/commands/plus.ts](https://github.com/LimMem/limmem.git/limmem/blob/v0.0.1/src/commands/plus.ts)_
 <!-- commandsstop -->
