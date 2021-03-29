@@ -52,9 +52,17 @@ class Generator {
   }
 
   modifyExportIndex(componentName: string) {
-    const target = join(
+    // 可能存在 index.ts/ index.tsx 两种格式
+    let target = join(
       `${this.absoluteSrc}`, 'index.ts'
     )
+
+    if (!existsSync(target)) {
+      target = join(
+        `${this.absoluteSrc}`, 'index.tsx'
+      )
+    }
+
     appendFileToText({
       targetFile: target,
       text: '\n'+ `export { default as ${componentName} } from './${componentName}';`

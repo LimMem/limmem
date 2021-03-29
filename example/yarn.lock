@@ -368,10 +368,10 @@ limmem@0.0.3:
     mustache "^4.1.0"
     tslib "^1"
 
-limmem@0.0.6:
-  version "0.0.6"
-  resolved "https://registry.npmjs.org/limmem/-/limmem-0.0.6.tgz#9ae992c8cbeb36bc358d97b7e94f8e6c7e74e4cc"
-  integrity sha512-hq/wnvS4dQgQMdEdwQ8QJjvJbKd8FTTyap6w4u2Qx6U9QBOCBGxFrvZLTkWejSfDDtKeCDCD8w10RwJzHOpQWg==
+limmem@0.1.0:
+  version "0.1.0"
+  resolved "https://registry.npmjs.org/limmem/-/limmem-0.1.0.tgz#579d028e80ffc6932331ab548fccfbe977b7426c"
+  integrity sha512-xuvmC5XuvL7q26F6zUHtF7yejZQkPAKhRWLbfsu5GCDKK5EAxmlonMRXF7pe+3tUNBDp3PvMM9JvhMxHK3vA6Q==
   dependencies:
     "@oclif/command" "^1"
     "@oclif/config" "^1"

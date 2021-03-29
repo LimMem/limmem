@@ -5,12 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "plus": "limmem plus"
+    "plus": "limmem plus",
+    "charts": "limmem charts",
+    "edit": "limmem edit"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "limmem": "0.0.6"
+    "limmem": "0.1.0"
   }
 }

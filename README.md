@@ -15,7 +15,7 @@ $ npm install -g limmem
 $ limmem COMMAND
 running command...
 $ limmem (-v|--version|version)
-limmem/0.0.6 darwin-x64 node-v12.18.3
+limmem/0.1.1 darwin-x64 node-v12.18.3
 $ limmem --help [COMMAND]
 USAGE
   $ limmem COMMAND
@@ -26,6 +26,7 @@ USAGE
 <!-- commands -->
 * [`limmem app [NAME] [SUBNAME]`](#limmem-app-name-subname)
 * [`limmem charts [NAME] [SUBNAME]`](#limmem-charts-name-subname)
+* [`limmem edit [NAME] [TEXT]`](#limmem-edit-name-text)
 * [`limmem help [COMMAND]`](#limmem-help-command)
 * [`limmem plus [NAME] [SUBNAME]`](#limmem-plus-name-subname)
 
@@ -50,7 +51,7 @@ EXAMPLE
   $ limmem App [NAME] [SUBNAME]
 ```
 
-_See code: [src/commands/app.ts](https://github.com/LimMem/limmem.git/limmem/blob/v0.0.6/src/commands/app.ts)_
+_See code: [src/commands/app.ts](https://github.com/LimMem/limmem.git/limmem/blob/v0.1.1/src/commands/app.ts)_
 
 ## `limmem charts [NAME] [SUBNAME]`
 
@@ -73,7 +74,30 @@ EXAMPLE
   $ limmem charts [NAME] [SUBNAME]
 ```
 
-_See code: [src/commands/charts.ts](https://github.com/LimMem/limmem.git/limmem/blob/v0.0.6/src/commands/charts.ts)_
+_See code: [src/commands/charts.ts](https://github.com/LimMem/limmem.git/limmem/blob/v0.1.1/src/commands/charts.ts)_
+
+## `limmem edit [NAME] [TEXT]`
+
+describe the command here
+
+```
+USAGE
+  $ limmem edit [NAME] [TEXT]
+
+ARGUMENTS
+  NAME  组件
+  TEXT  组件名称
+
+OPTIONS
+  -f, --force
+  -h, --help       show CLI help
+  -n, --name=name  name to print
+
+EXAMPLE
+  $ limmem edit [NAME] [TEXT]
+```
+
+_See code: [src/commands/edit.ts](https://github.com/LimMem/limmem.git/limmem/blob/v0.1.1/src/commands/edit.ts)_
 
 ## `limmem help [COMMAND]`
 
@@ -113,5 +137,5 @@ EXAMPLE
   $ limmem plus [NAME] [SUBNAME]
 ```
 
-_See code: [src/commands/plus.ts](https://github.com/LimMem/limmem.git/limmem/blob/v0.0.6/src/commands/plus.ts)_
+_See code: [src/commands/plus.ts](https://github.com/LimMem/limmem.git/limmem/blob/v0.1.1/src/commands/plus.ts)_
 <!-- commandsstop -->
