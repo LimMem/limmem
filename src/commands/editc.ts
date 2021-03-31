@@ -100,14 +100,14 @@ export default class Edit extends Command {
     // 增加模板
     const componentName = lodash.upperFirst(name);
 
-    const tempPath = join(srcPath, '/editor/mobileComponents/plus');
+    const tempPath = join(srcPath, '/editor/mobileComponents/charts');
     copyTpl({
       templatePath: join(__dirname, '../../template/edit/mobileComponents/mobileComponents.tpl'),
       target: join(tempPath, `${componentName}/${componentName}.jsx`),
       context: {
         mobileComponents: componentName,
         text,
-        compLib: '@alitajs/antd-mobile-plus'
+        compLib: '@alitajs/charts'
       }
     });
 
@@ -117,7 +117,7 @@ export default class Edit extends Command {
       context: {
         mobileComponents: componentName,
         text,
-        compLib: '@alitajs/antd-mobile-plus'
+        compLib: '@alitajs/charts'
       }
     });
 
@@ -132,7 +132,7 @@ export default class Edit extends Command {
       context: {
         mobileComponents: lodash.upperFirst(name),
         text,
-        compLib: '@alitajs/antd-mobile-plus'
+        compLib: '@alitajs/charts'
       }
     });
   }
@@ -154,7 +154,7 @@ export default class Edit extends Command {
       templatePath: join(__dirname, '../../template/edit/mobileTodoLists.tpl'),
       target: targetPath,
       context: {
-        compLib: '@alitajs/antd-mobile-plus'
+        compLib: '@alitajs/charts'
       }
     });
   }

@@ -79,6 +79,8 @@ const components = {
   Empty: MyLoadablePlus('Empty'),
   YearMonthView: MyLoadablePlus('YearMonthView'),
   G: MyLoadablePlus('G'),
+    AAAA: MyLoadablePlus('AAAA'),
+    AAAA: MyLoadablePlus('AAAA'),
     //待添加区域
 };
 export default components;

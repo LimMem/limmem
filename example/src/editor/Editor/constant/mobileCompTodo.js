@@ -100,7 +100,37 @@ G: {
       "customStyle",
     ],
   },
+  AAAA: {
+    todoProps: [""],
+    todoEvents: [""],
+    todoStyles: [
+      "textAlign",
+      "padding",
+      "margin",
+      "width",
+      "height",
+      "backgroundColor",
+      "borderColor",
+      "customStyle",
+    ],
+  },
+  AAAA: {
+    todoProps: [""],
+    todoEvents: [""],
+    todoStyles: [
+      "textAlign",
+      "padding",
+      "margin",
+      "width",
+      "height",
+      "backgroundColor",
+      "borderColor",
+      "customStyle",
+    ],
+  },
   //待添加区域
+
+
 
 
 

@@ -1,5 +1,5 @@
 import React from "react";
-import {{{ mobileComponents }}} from "@alitajs/antd-mobile-plus/lib/{{{ mobileComponents }}}";
+import {{{ mobileComponents }}} from "{{{ compLib }}}/lib/{{{ mobileComponents }}}";
 
 const My{{{ mobileComponents }}} = (props) => {
   const { ...restProps } = props;

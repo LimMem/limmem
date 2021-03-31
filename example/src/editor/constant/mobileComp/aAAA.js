@@ -1,15 +1,15 @@
 import createId from "$editor/utils/createId";
 import { getDefaultConfigs } from "../compList";
 
-const {{{ mobileComponents }}} = ({ props = {}, ...restConfigs }) => ({
+const AAAA = ({ props = {}, ...restConfigs }) => ({
   ...getDefaultConfigs(
     1,
-    "{{{ text }}}",
-    "{{{ mobileComponents }}}",
+    "测试",
+    "AAAA",
     {
       ...props,
     },
-    "{{{ compLib }}}"
+    "@alitajs/antd-mobile-plus"
   ),
   ...restConfigs,
   setEvents: [
@@ -30,4 +30,4 @@ const {{{ mobileComponents }}} = ({ props = {}, ...restConfigs }) => ({
   ],
 });
 
-export default {{{ mobileComponents }}};
+export default AAAA;
