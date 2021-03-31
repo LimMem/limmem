@@ -6,7 +6,7 @@ const assert = require('assert');
 const lodash = require('lodash');
 
 export default class Edit extends Command {
-  static description = 'describe the command here'
+  static description = '生成edit编辑器'
 
   static examples = [
     `$ limmem edit [NAME] [TEXT]`,
@@ -44,27 +44,25 @@ export default class Edit extends Command {
 
     ///// 待添加区域
     const componentName = lodash.upperFirst(name);
-    const Str = `
-${componentName}: {
-  todoProps: [""],
-  todoEvents: [""],
-  todoStyles: [
-    "textAlign",
-    "padding",
-    "margin",
-    "width",
-    "height",
-    "backgroundColor",
-    "borderColor",
-    "customStyle",
-  ],
-},
-///// 待添加区域
-
+    const Str = `${componentName}: {
+    todoProps: [""],
+    todoEvents: [""],
+    todoStyles: [
+      "textAlign",
+      "padding",
+      "margin",
+      "width",
+      "height",
+      "backgroundColor",
+      "borderColor",
+      "customStyle",
+    ],
+  },
+  //待添加区域
 `
     const filePath = join(srcPath, '/editor/Editor/constant/mobileCompTodo.js');
-    const content = readFileSync(filePath, 'utf-8');
-    content.replace(/\/\/\/\/\/ 待添加区域/, Str);
+    let content = readFileSync(filePath, 'utf-8');
+     content = content.replace("//待添加区域", Str);
     writeFileSync(filePath, content);
 
   }
@@ -79,18 +77,21 @@ ${componentName}: {
     // },
     // 提示需要手动复制
     const componentName = lodash.upperFirst(name);
-    const Str1 = `import ${componentName} from "./mobileComp/${componentName}";
-///// 待添加区域1
-// {
-//   label: "${text}",
-//   compName: "${componentName}",
-// },
-    `;
+    const Str1 = `import ${componentName} from "./mobileComp/${lodash.lowerFirst(name)}";
+//待添加区域1`;
+    const str2 = `${componentName},
+//待添加区域2`;
+    const str3 = `{
+  label: "${text}",
+  compName: "${componentName}",
+},
+//待添加区域3`
 
     const filePath = join(srcPath, '/editor/constant/mobileCompList.js');
-    const content = readFileSync(filePath, 'utf-8');
-    content.replace(/\/\/\/\/\/ 待添加区域1/, Str1);
-    content.replace(/\/\/\/\/\/ 待添加区域2/, `${componentName},`);
+    let content = readFileSync(filePath, 'utf-8');
+    content = content.replace("//待添加区域1", Str1);
+    content = content.replace("//待添加区域2", str2);
+    content = content.replace("//待添加区域3", str3);
     writeFileSync(filePath, content);
   }
 
@@ -122,15 +123,34 @@ ${componentName}: {
 
 // src/editor/constant/mobileComp   增加模板文件
   addMobileComp(srcPath:string, name:string, text:string) {
-    const componentName = lodash.upperFirst(name);
-
-    const tempPath = join(srcPath, '/editor/mobileComponents/plus');
+    const componentName = lodash.lowerFirst(name);
     copyTpl({
       templatePath: join(__dirname, '../../template/edit/mobileComp.tpl'),
-      target: join(tempPath, `/editor/constant/mobileComp/${name}.js`),
+      target: join(srcPath, `/editor/constant/mobileComp/${componentName}.js`),
       context: {
-        mobileComponents: componentName,
+        mobileComponents: lodash.upperFirst(name),
         text
+      }
+    });
+  }
+
+  addIndex(srcPath:string, name:string) {
+    //待添加区域
+    const targetPath = join(srcPath, '/editor/mobileComponents/index.js');
+    const text = `${lodash.upperFirst(name)}: MyLoadablePlus('${lodash.upperFirst(name)}'),
+    //待添加区域`
+    let content = readFileSync(targetPath, 'utf-8');
+    content = content.replace("//待添加区域", text);
+    writeFileSync(targetPath, content);
+  }
+
+  mobileTodoLists(srcPath:string, name:string) {
+    const componentName = lodash.lowerFirst(name);
+    const targetPath = join(srcPath, `/edit/Editor/constant/mobileTodoLists/${componentName}.js`);
+    copyTpl({
+      templatePath: join(__dirname, '../../template/edit/mobileTodoLists.tpl'),
+      target: targetPath,
+      context: {
       }
     });
   }
@@ -138,6 +158,7 @@ ${componentName}: {
 
   async run() {
     const { args } = this.parse(Edit);
+    console.log('tag', args)
     const { name,text } = args;
     const srcPath = absSrcPath();
     if (!srcPath) {
@@ -147,5 +168,7 @@ ${componentName}: {
     this.addMobileCompList(srcPath, name, text);
     this.addPlus(srcPath, name, text);
     this.addMobileComp(srcPath, name, text);
+    this.mobileTodoLists(srcPath, name);
+    this.addIndex(srcPath, name)
   }
 }

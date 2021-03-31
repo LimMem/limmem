@@ -15,7 +15,7 @@ $ npm install -g limmem
 $ limmem COMMAND
 running command...
 $ limmem (-v|--version|version)
-limmem/0.1.1 darwin-x64 node-v12.18.3
+limmem/0.2.0 darwin-x64 node-v12.18.3
 $ limmem --help [COMMAND]
 USAGE
   $ limmem COMMAND
@@ -51,7 +51,7 @@ EXAMPLE
   $ limmem App [NAME] [SUBNAME]
 ```
 
-_See code: [src/commands/app.ts](https://github.com/LimMem/limmem.git/limmem/blob/v0.1.1/src/commands/app.ts)_
+_See code: [src/commands/app.ts](https://github.com/LimMem/limmem.git/limmem/blob/v0.2.0/src/commands/app.ts)_
 
 ## `limmem charts [NAME] [SUBNAME]`
 
@@ -74,11 +74,11 @@ EXAMPLE
   $ limmem charts [NAME] [SUBNAME]
 ```
 
-_See code: [src/commands/charts.ts](https://github.com/LimMem/limmem.git/limmem/blob/v0.1.1/src/commands/charts.ts)_
+_See code: [src/commands/charts.ts](https://github.com/LimMem/limmem.git/limmem/blob/v0.2.0/src/commands/charts.ts)_
 
 ## `limmem edit [NAME] [TEXT]`
 
-describe the command here
+生成edit编辑器
 
 ```
 USAGE
@@ -97,7 +97,7 @@ EXAMPLE
   $ limmem edit [NAME] [TEXT]
 ```
 
-_See code: [src/commands/edit.ts](https://github.com/LimMem/limmem.git/limmem/blob/v0.1.1/src/commands/edit.ts)_
+_See code: [src/commands/edit.ts](https://github.com/LimMem/limmem.git/limmem/blob/v0.2.0/src/commands/edit.ts)_
 
 ## `limmem help [COMMAND]`
 
@@ -137,5 +137,5 @@ EXAMPLE
   $ limmem plus [NAME] [SUBNAME]
 ```
 
-_See code: [src/commands/plus.ts](https://github.com/LimMem/limmem.git/limmem/blob/v0.1.1/src/commands/plus.ts)_
+_See code: [src/commands/plus.ts](https://github.com/LimMem/limmem.git/limmem/blob/v0.2.0/src/commands/plus.ts)_
 <!-- commandsstop -->

@@ -1275,31 +1275,33 @@ levn@^0.3.0, levn@~0.3.0:
     prelude-ls "~1.1.2"
     type-check "~0.3.2"
 
-limmem@0.0.3:
-  version "0.0.3"
-  resolved "https://registry.npmjs.org/limmem/-/limmem-0.0.3.tgz#96fc31341a93a74efdd6517ce2c2d316715415e5"
-  integrity sha512-wHuPutSuDzfWrulcuoOebBci//bNTtdgWTqRmORMFaABFot0hMXZxtuky3Em4EkodKKfoUGUTI8YAGET7TEzWg==
+limmem@0.2.0:
+  version "0.2.0"
+  resolved "https://registry.npmjs.org/limmem/-/limmem-0.2.0.tgz#78823110eb069ca8b64249ef713ed8a967b81661"
+  integrity sha512-pM8TQUHLSHHIj51RPLkKUk/tX8940nfxeiEsEG2+IC0vWEHy+h8k/v6YyNd6ym8INVb9iO4iTZWPl1c/WZK1ig==
   dependencies:
     "@oclif/command" "^1"
     "@oclif/config" "^1"
     "@oclif/plugin-help" "^3"
     "@types/mkdirp" "^1.0.1"
     global "^4.4.0"
-    limmem "^0.0.1"
+    limmem "^0.1.3"
     lodash "^4.17.21"
     mkdirp "^1.0.4"
     mustache "^4.1.0"
     tslib "^1"
 
-limmem@^0.0.1:
-  version "0.0.1"
-  resolved "https://registry.npmjs.org/limmem/-/limmem-0.0.1.tgz#c0ff5b67d7399a2fab4f6662cced8af02640aca0"
-  integrity sha512-8t/E1RbKslB6tRpt4kalxxyYqRtYztt72p3LS1JOdEQ1lt9l1Q7NSqw2XSWYJUTfMRT9cfMnCdf+wYme+hkeWA==
+limmem@^0.1.3:
+  version "0.1.8"
+  resolved "https://registry.npmjs.org/limmem/-/limmem-0.1.8.tgz#7e90473ceb63398238e623b182dbfe14e37b0c33"
+  integrity sha512-5qDJFtQI2fY3PMNon3f0FS6bKPw3TADDs1e89tGTwuWBYqMT03sD0+9TCjg4nmoiGaMN+YsK8gvHjJsaCiaZ1A==
   dependencies:
     "@oclif/command" "^1"
     "@oclif/config" "^1"
     "@oclif/plugin-help" "^3"
     "@types/mkdirp" "^1.0.1"
+    global "^4.4.0"
+    limmem "^0.1.3"
     lodash "^4.17.21"
     mkdirp "^1.0.4"
     mustache "^4.1.0"
