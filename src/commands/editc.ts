@@ -5,7 +5,7 @@ import { cwd, absSrcPath, copyTpl} from '../utils';
 const assert = require('assert');
 const lodash = require('lodash');
 
-export default class Edit extends Command {
+export default class Editc extends Command {
   static description = '生成edit编辑器'
 
   static examples = [
@@ -149,7 +149,7 @@ export default class Edit extends Command {
 
   mobileTodoLists(srcPath:string, name:string) {
     const componentName = lodash.lowerFirst(name);
-    const targetPath = join(srcPath, `/edit/Editor/constant/mobileTodoLists/${componentName}.js`);
+    const targetPath = join(srcPath, `/editor/Editor/constant/mobileTodoLists/${componentName}.js`);
     copyTpl({
       templatePath: join(__dirname, '../../template/edit/mobileTodoLists.tpl'),
       target: targetPath,
@@ -161,7 +161,7 @@ export default class Edit extends Command {
 
 
   async run() {
-    const { args } = this.parse(Edit);
+    const { args } = this.parse(Editc);
     console.log('tag', args)
     const { name,text } = args;
     const srcPath = absSrcPath();

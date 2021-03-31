@@ -81,6 +81,8 @@ const components = {
   G: MyLoadablePlus('G'),
     AAAA: MyLoadablePlus('AAAA'),
     AAAA: MyLoadablePlus('AAAA'),
+    Charts: MyLoadablePlus('Charts'),
+    Plus: MyLoadablePlus('Plus'),
     //待添加区域
 };
 export default components;

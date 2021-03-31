@@ -149,7 +149,7 @@ export default class Edit extends Command {
 
   mobileTodoLists(srcPath:string, name:string) {
     const componentName = lodash.lowerFirst(name);
-    const targetPath = join(srcPath, `/edit/Editor/constant/mobileTodoLists/${componentName}.js`);
+    const targetPath = join(srcPath, `/editor/Editor/constant/mobileTodoLists/${componentName}.js`);
     copyTpl({
       templatePath: join(__dirname, '../../template/edit/mobileTodoLists.tpl'),
       target: targetPath,

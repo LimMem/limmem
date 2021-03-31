@@ -5,6 +5,8 @@ import F from "./mobileComp/f";
 import G from "./mobileComp/g";
 import AAAA from "./mobileComp/aAAA";
 import AAAA from "./mobileComp/aAAA";
+import Charts from "./mobileComp/charts";
+import Plus from "./mobileComp/plus";
 //待添加区域1
 // {
 //   label: "测试G",
@@ -39,11 +41,21 @@ F,
 G,
 AAAA,
 AAAA,
+Charts,
+Plus,
 //待添加区域2
 
   {
   label: "测试",
   compName: "AAAA",
+},
+{
+  label: "charts组件",
+  compName: "Charts",
+},
+{
+  label: "Plus测试",
+  compName: "Plus",
 },
 //待添加区域3
 

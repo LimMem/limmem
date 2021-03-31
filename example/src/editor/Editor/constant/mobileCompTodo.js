@@ -128,7 +128,37 @@ G: {
       "customStyle",
     ],
   },
+  Charts: {
+    todoProps: [""],
+    todoEvents: [""],
+    todoStyles: [
+      "textAlign",
+      "padding",
+      "margin",
+      "width",
+      "height",
+      "backgroundColor",
+      "borderColor",
+      "customStyle",
+    ],
+  },
+  Plus: {
+    todoProps: [""],
+    todoEvents: [""],
+    todoStyles: [
+      "textAlign",
+      "padding",
+      "margin",
+      "width",
+      "height",
+      "backgroundColor",
+      "borderColor",
+      "customStyle",
+    ],
+  },
   //待添加区域
+
+
 
 
 
