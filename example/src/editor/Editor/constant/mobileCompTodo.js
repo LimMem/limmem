@@ -156,7 +156,52 @@ G: {
       "customStyle",
     ],
   },
+  ATest: {
+    todoProps: [""],
+    todoEvents: [""],
+    todoStyles: [
+      "textAlign",
+      "padding",
+      "margin",
+      "width",
+      "height",
+      "backgroundColor",
+      "borderColor",
+      "customStyle",
+    ],
+  },
+  ATest: {
+    todoProps: [""],
+    todoEvents: [""],
+    todoStyles: [
+      "textAlign",
+      "padding",
+      "margin",
+      "width",
+      "height",
+      "backgroundColor",
+      "borderColor",
+      "customStyle",
+    ],
+  },
+  ATestA: {
+    todoProps: [""],
+    todoEvents: [""],
+    todoStyles: [
+      "textAlign",
+      "padding",
+      "margin",
+      "width",
+      "height",
+      "backgroundColor",
+      "borderColor",
+      "customStyle",
+    ],
+  },
   //待添加区域
+
+
+
 
 
 

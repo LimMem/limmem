@@ -7,6 +7,9 @@ import AAAA from "./mobileComp/aAAA";
 import AAAA from "./mobileComp/aAAA";
 import Charts from "./mobileComp/charts";
 import Plus from "./mobileComp/plus";
+import ATest from "./mobileComp/aTest";
+import ATest from "./mobileComp/aTest";
+import ATestA from "./mobileComp/aTestA";
 //待添加区域1
 // {
 //   label: "测试G",
@@ -43,6 +46,9 @@ AAAA,
 AAAA,
 Charts,
 Plus,
+ATest,
+ATest,
+ATestA,
 //待添加区域2
 
   {
@@ -57,10 +63,18 @@ Plus,
   label: "Plus测试",
   compName: "Plus",
 },
+{
+  label: "Test",
+  compName: "ATest",
+},
 //待添加区域3
 
 
-
+{
+  label: "Test",
+  compName: "ATestA",
+},
+//待添加区域4
 
 
 

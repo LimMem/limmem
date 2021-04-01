@@ -85,13 +85,13 @@ export default class Editc extends Command {
   label: "${text}",
   compName: "${componentName}",
 },
-//待添加区域3`
+//待添加区域4`
 
     const filePath = join(srcPath, '/editor/constant/mobileCompList.js');
     let content = readFileSync(filePath, 'utf-8');
     content = content.replace("//待添加区域1", Str1);
     content = content.replace("//待添加区域2", str2);
-    content = content.replace("//待添加区域3", str3);
+    content = content.replace("//待添加区域4", str3);
     writeFileSync(filePath, content);
   }
 
@@ -140,7 +140,7 @@ export default class Editc extends Command {
   addIndex(srcPath:string, name:string) {
     //待添加区域
     const targetPath = join(srcPath, '/editor/mobileComponents/index.js');
-    const text = `${lodash.upperFirst(name)}: MyLoadablePlus('${lodash.upperFirst(name)}'),
+    const text = `${lodash.upperFirst(name)}: MyLoadableCharts('${lodash.upperFirst(name)}'),
     //待添加区域`
     let content = readFileSync(targetPath, 'utf-8');
     content = content.replace("//待添加区域", text);

@@ -1,7 +1,7 @@
 {
   "name": "limmem",
   "description": "模板生成器",
-  "version": "0.2.3",
+  "version": "0.2.5",
   "author": "1270253618@qq.com",
   "bin": {
     "limmem": "./bin/run"

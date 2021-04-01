@@ -83,6 +83,9 @@ const components = {
     AAAA: MyLoadablePlus('AAAA'),
     Charts: MyLoadablePlus('Charts'),
     Plus: MyLoadablePlus('Plus'),
+    ATest: MyLoadablePlus('ATest'),
+    ATest: MyLoadablePlus('ATest'),
+    ATestA: MyLoadablePlus('ATestA'),
     //待添加区域
 };
 export default components;
